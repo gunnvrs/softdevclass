@@ -15,7 +15,7 @@ app.get('/product', function(req, res){
 })
 
 app.get('*', (req, res) => {
-    res.send('ไม่พบหน้าที่ร้องขอ ERROR  : 404 Page Not Found')
+    res.sendFile(__dirname + '/public/product.html')
     // return res.redirect('/product')
 })
 
